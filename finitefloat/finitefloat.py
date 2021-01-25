@@ -13,4 +13,4 @@ class finitefloat(float):
         f = float(x)
         if not isfinite(f):
             raise NotFinite
-        return float.__new__(finitefloat, f)  # type: ignore
+        return float.__new__(finitefloat, f)
